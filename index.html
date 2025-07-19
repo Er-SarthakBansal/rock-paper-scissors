@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    /* .tools{
+      height: 27%;
+      width: 10%;
+      border-radius: 10px;
+      border: none;
+      background-color: black;
+      /* margin: 42px; 
+     }  */
+    /* #reset{
+      height: 33px;
+      width: 80px;
+      border-radius: 5px;
+      margin: 5px;
+      border: none;
+    }
+    .img_btn{
+    height: 150px;
+    border-radius: 10px;
+    }
+    .btn_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons 
+  margin-bottom: 20px;
+ } */
+  </style>
+</head>
+<body>
+  <h1>ROCK, PAPER, SCISSORS GAME</h1>
+  <div class="btn_container">
+  <button class="choice_btn"
+  onclick="
+  let botChoice = generateCompChoice();
+  let result = findResult('ROCK',botChoice);
+  showResult('ROCK',botChoice,result);
+  "
+  ><img src="Assets/rock-Photoroom.png" alt="rock image" class="img_btn"></button>
+  <button class="choice_btn"
+  onclick="
+  botChoice = generateCompChoice();
+  result = findResult('PAPER',botChoice);
+  showResult('PAPER',botChoice,result);
+  "
+  ><img src="Assets/paper.webp" alt="paper image" class="img_btn"></button>
+  <button class="choice_btn"
+  onclick="
+  botChoice = generateCompChoice();
+  result = findResult('SCISSORS',botChoice);
+  showResult('SCISSORS',botChoice,result);
+  "
+  ><img src="Assets/scissors-Photoroom.png" alt="scissors image" class="img_btn"></button>
+  </div>
+  <br>
+  <h3 id="user-move"></h3>
+  <h3 id="comp-move"></h3>
+  <h3 id="result"></h3>
+  <h3 id="score"></h3>
+  <button
+  onclick="
+  localStorage.removeItem('score');
+   score={
+        won:0,
+        lost:0,
+        tie:0,
+        displayRecord: function () {
+        return `WON: ${this.won}  LOST: ${this.lost}  TIE: ${this.tie}`;
+      },}
+      document.querySelector('#user-move').innerText ='',
+      document.querySelector('#comp-move').innerText = 
+      '',
+      document.querySelector('#result').innerText = 
+      '',
+      document.querySelector('#score').innerText = 
+      `TOTAL SCORE IS:- ${score.displayRecord()}.`
+    ;" id="reset"><img src="Assets/reset-Photoroom.png" alt="#Reset-IMAGE" id="reset_img"></button>
+  <script src="script.js">
+  </script>
+</body>
+</html>

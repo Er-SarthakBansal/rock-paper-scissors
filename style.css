@@ -1,0 +1,33 @@
+body{
+      text-align: center;
+    }
+    .choice_btn{
+      height: 170px;
+      width: 170px;
+      border: none;
+      background-color: rgb(136, 149, 149);
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .img_btn{
+      height: 170px;
+      border-radius: 10px;
+    }
+    #reset{
+      height: 150px;
+      width: 150px;
+      border: none;
+      background-color: rgb(119, 226, 148);
+      border-radius: 80px;
+    }
+    #reset_img{
+      height: 120px;
+    }
+    .choice_btn:hover{
+      box-shadow: 5px 5px 5px 5px rgb(65, 66, 60);
+      transition: 0.5s;
+    }
+    #reset:hover{
+      box-shadow: 5px 5px 5px 5px rgb(12, 94, 38);
+      transition: 0.5s;
+    }
