@@ -31,3 +31,22 @@ body{
       box-shadow: 5px 5px 5px 5px rgb(12, 94, 38);
       transition: 0.5s;
     }
+    @media (max-width: 420px) {
+      .choice_btn{
+      height: 130px;
+      width: 130px;
+      margin: 5px;
+      border-radius: 10px;
+      }
+      .img_btn{
+      height: 130px;
+      }
+      #reset{
+      height: 120px;
+      width: 120px;
+      border-radius: 70px;
+    }
+    #reset_img{
+      height: 100px;
+    }
+}
